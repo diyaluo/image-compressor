@@ -54,6 +54,21 @@
           "item": "https://diyaluo.github.io/image-compressor/"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Are my photos uploaded when I compress them?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Compression runs entirely in your browser with the Canvas API and JavaScript. Your PNG, JPEG, WebP and GIF images are never sent to a server, so the tool is safe for private or work documents." } },
+        { "@type": "Question", "name": "How much smaller will my images become?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The reduction depends on the format, original resolution and quality level you choose. JPEG and WebP photos typically shrink by 50-80%, which makes them faster to email, upload and load on websites. You can preview the estimated saving before downloading." } },
+        { "@type": "Question", "name": "Which formats are supported?",
+          "acceptedAnswer": { "@type": "Answer", "text": "PNG, JPEG/JPG, WebP and GIF are supported. You can compress several images in one batch, optionally convert the output format, and limit maximum dimensions to resize large photos at the same time." } },
+        { "@type": "Question", "name": "Does compressing reduce image quality?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Lossy formats such as JPEG and WebP remove data that is hard for the eye to notice; at moderate quality settings the difference is usually invisible on screen while the file is much smaller. PNG compression keeps the image lossless. You control the quality slider, so you can balance size against clarity." } },
+        { "@type": "Question", "name": "Is there a sign-up, watermark or file limit?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No account, no sign-up, no watermark and no fee. Because everything is processed locally on your device, practical batch size depends on your computer's memory rather than a server quota." } }
+      ]
     }
   ]
 }
@@ -338,6 +353,19 @@
     }
   </style>
 </head>
+<style>
+  .seo-content{margin-top:48px;padding-top:32px;border-top:1px solid var(--border,#e5e7eb);max-width:820px;margin-left:auto;margin-right:auto}
+  .seo-content h2{font-size:22px;margin:28px 0 12px}
+  .seo-content h2:first-child{margin-top:0}
+  .seo-content p{color:#374151;font-size:15px;line-height:1.7;margin-bottom:12px}
+  .seo-content ul{margin:0 0 12px 22px;color:#374151;font-size:15px;line-height:1.8}
+  .seo-faq details{background:#fff;border:1px solid var(--border,#e5e7eb);border-radius:10px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  .seo-faq summary{font-weight:600;font-size:15px;cursor:pointer;list-style:none;position:relative;padding-right:24px}
+  .seo-faq summary::-webkit-details-marker{display:none}
+  .seo-faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);color:#4f6ef7;font-size:20px;font-weight:400}
+  .seo-faq details[open] summary::after{content:"\2212"}
+  .seo-faq details p{margin:10px 0 2px}
+</style>
 <body>
 
 <header>
@@ -451,6 +479,36 @@
     <!-- Ad banner placeholder — replace with your ad code -->
     <span>Sponsored</span>
   </div>
+
+  <section class="seo-content">
+    <h2>Free Online Image Compressor &mdash; Shrink Photos Without Uploading</h2>
+    <p>This free image compressor reduces the file size of PNG, JPEG, WebP and GIF images directly in your browser. Add a single photo or a whole batch, choose a quality level and optional maximum dimensions, preview the estimated saving, and download the smaller files. Because the compression happens on your device with the Canvas API, your pictures are never uploaded, making the tool suitable for screenshots, ID photos, work documents and client images.</p>
+    <p>Smaller images load faster on websites, send more easily by email or chat, take less space on your phone or cloud drive, and stay under the upload limits that many platforms enforce.</p>
+
+    <h2>What you can do</h2>
+    <ul>
+      <li><strong>Compress in bulk</strong> &mdash; process many images at once and download them individually or together as a ZIP.</li>
+      <li><strong>Balance size and quality</strong> &mdash; the quality slider lets you choose aggressive shrinking or near-lossless clarity.</li>
+      <li><strong>Resize at the same time</strong> &mdash; set maximum width/height so oversized phone photos are scaled down as they compress.</li>
+      <li><strong>Convert formats</strong> &mdash; choose the output format that fits the job, from photographic JPEG/WebP to sharp PNG graphics.</li>
+      <li><strong>Stay private</strong> &mdash; no upload, no account, no watermark; everything runs locally.</li>
+    </ul>
+
+    <h2>JPEG, PNG or WebP?</h2>
+    <p>Use JPEG for photographs and continuous-tone images where a small, invisible amount of loss is a good trade for a much smaller file. WebP often beats JPEG on size at the same visual quality and is supported by every modern browser. PNG is lossless and best for screenshots, logos, signatures and images with text or transparent backgrounds, so the compressor preserves PNG quality rather than degrading it.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="seo-faq">
+      <details><summary>Are my photos uploaded to a server?</summary><p>No. Compression runs entirely in your browser with the Canvas API. Images are never transmitted or stored, so the tool is safe for private documents.</p></details>
+      <details><summary>How much smaller will images become?</summary><p>It depends on the format, resolution and quality level. JPEG and WebP photos commonly shrink by 50-80%, and you can preview the estimated saving before downloading.</p></details>
+      <details><summary>Which formats are supported?</summary><p>PNG, JPEG/JPG, WebP and GIF. You can batch-compress, convert the output format and cap dimensions in one pass.</p></details>
+      <details><summary>Does compression reduce visible quality?</summary><p>JPEG and WebP remove data that is hard to notice, so moderate settings usually look identical on screen at a fraction of the size. PNG stays lossless, and you control the quality slider.</p></details>
+      <details><summary>Is there a sign-up, watermark or limit?</summary><p>No account, no sign-up, no watermark and no fee. Batch size is bounded by your own device's memory, not a server quota.</p></details>
+    </div>
+
+    <h2>More free tools</h2>
+    <p>Turn pictures into a document with our <a href="https://diyaluo.github.io/image-to-pdf/">image to PDF converter</a>, clean up images with the <a href="https://diyaluo.github.io/watermark-remover/">watermark remover</a>, or see all <a href="https://diyaluo.github.io/">free online tools</a>.</p>
+  </section>
 </main>
 
 <footer>
